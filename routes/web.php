@@ -13,6 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [
+    'as' => 'root_path',
+    'uses' => 'PageController@home'
+
+]);
+
+Route::get('/about', [
+    'as' => 'about_path',
+    'uses' => 'PageController@about'
+
+]);

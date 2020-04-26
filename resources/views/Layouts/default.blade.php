@@ -6,7 +6,8 @@
     <script src="{{asset('/bootstrap/js/jquery-3.5.0.min.js')}}"> </script>
     <link rel="stylesheet" href="{{asset('/bootstrap/css/bootstrap.min.css')}}">
     <script src="{{asset('/bootstrap/js/bootstrap.min.js')}}"> </script>
-    <title>Laracarte</title>
+    <title>{{page_Title($title ?? '')}}</title>
+    
 </head>
 <body>
     @include('layouts/partials/_nav')
