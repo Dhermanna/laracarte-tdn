@@ -3,7 +3,7 @@
 @section('contenu')
 
 <div class="container">
-    <h2>What is laracarte</h2>
+    <h2>What is {{config('app.name')}}</h2>
     <p>Belle application; le lien est <a href="laracarte.gov.bf" target="_blank">larabelle.com</a></p>
 
 <div class="row">
@@ -20,7 +20,7 @@
 
 <h2>What is Laramap</h2>
 <p>Un vrai site de pro</p>
-<p>Plus d'infos sur : <a href="laracarte.gov.bf">ici</a></p>
+<p>Plus d'infos sur : <a href="{{config('app.name')}}.gov.bf">ici</a></p>
 
 <hr>
 
