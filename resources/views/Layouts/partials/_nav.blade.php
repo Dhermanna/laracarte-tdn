@@ -27,8 +27,8 @@
           <a class="dropdown-item" href="#">Larajob</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+      <li class="{{set_active_route('contact_path')}} nav-item">
+        <a class="nav-link" href="{{route('contact_path')}}">Contact</a>
       </li>
     </ul>
     <ul class="nav navbar-nav navbar-right">

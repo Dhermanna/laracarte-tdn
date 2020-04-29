@@ -18,4 +18,10 @@ class PageController extends Controller
         # code...
         return view('pages.about');
     }
+
+    public function contact()
+    {
+        # code...
+        return view('pages.contact');
+    }
 }
