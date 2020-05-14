@@ -13,6 +13,6 @@ class ContactsController extends Controller
     }
 
     public function store(ContactRequest $request){
-       
+       // new ContactMessageCreated($request->name, $request->email, $request->message);
     }
 }

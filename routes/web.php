@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Mail\ContactMessageCreated;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,10 @@ Route::get('/', [
     'uses' => 'PageController@home'
 
 ]);
+
+Route::get('/test-email', function(){
+    return new ContactMessageCreated('Dilo le boss', 'dhermanna@gmail.com', 'Message envoyé avec succès!');
+});
 
 Route::get('/about', [
     'as' => 'about_path',
