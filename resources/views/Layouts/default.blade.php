@@ -13,5 +13,6 @@
     @include('layouts/partials/_nav')
     @yield('contenu')
     @include('layouts/partials/_footer')
+    @include('flashy::message')
 </body>
 </html>
